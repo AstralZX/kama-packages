@@ -32,11 +32,4 @@ needs (custom fetch, patches, post-install hooks, splitting), override
 `pkg_fetch`, `pkg_post`, or `pkg_split`. See the
 [full format spec](https://github.com/AstralZX/KeruOS/blob/main/docs/recipe-format.md).
 
-## Contributing
-
-1. Copy `TEMPLATE.sh` to `<name>.sh`.
-2. Fill in `name`, `version`, `url`, and the build/install functions.
-3. Verify with `sh -n <name>.sh` and by building it (`kama make <name>`).
-4. Open a pull request.
-
 <p align="center"><i>Every package a kiln-load — fire it from source.</i></p>
