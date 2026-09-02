@@ -21,7 +21,8 @@ runit.sh         advanced-tier example (custom fetch/patch, pkg_post)
 name=busybox
 version=1.36.1
 url=https://busybox.net/downloads/busybox-1.36.1.tar.bz2
-deps=()                  # build-time deps (AUR-style: built then purged)
+deps=                      # build-time deps (AUR-style: built then purged),
+                           # space-separated, e.g. deps="gcc musl-headers"
 
 build()   { make defconfig; make -j"$JOBS"; }   # configure + compile
 install() { make install CONFIG_PREFIX="$pkgdir"; }  # stage into $pkgdir
